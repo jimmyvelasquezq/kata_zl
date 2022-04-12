@@ -1,9 +1,10 @@
 <?php
 class BingoCardGeneratorTest extends TestCase
 {
-  public public function testWhenCallsNumberItsInTheValidRange()
+  public public function testCardContainsValidNumbersAccordingToColumn()
   {
-    $caller = new BingoCardGenerator();
+    $generator = new BingoCardGenerator();
+    $card = $generator->generated();
     $this->assertTrue(condition:true);
   }
 }
